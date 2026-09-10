@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Someone's birthday</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 id="Greetings">Wuzzup you handsome looking man</h1>
+    <p id="SomeoneSpecial">Are you from Tennessee? Because you're the only 10 I see! Hmm, If you're this handsome, you gotta be someone who means a lot to me, are you?</p>
+    <video 
+        id="Wuzzup"
+        class="slideMedia"
+        src="images/Wuzzup.mp4"
+        autoplay
+        muted
+        loop
+        playsinline></video>
+    <button id="SureButton">Umm, sure</button>
+
+    <div id="TestIntro" class="slide">
+        <h1 id="TestIntroHeading">That means, you're my boyfriend!!!</h1>
+        <p id="TestIntroText">But not so fast. To make sure, you're actually my boyfriend, I have a test for you. There will be 3 questions which you have to answer correctly to receive a special present. Are you ready?</p>
+        <video 
+        class="slideMedia"
+        src="images/Ready.mp4"
+        autoplay
+        muted
+        loop
+        playsinline></video>
+        <button id="FineButton">Fine, let's do it!</button> 
+        <button id="NahButton" style="position:absolute;">Nah, I don't have time for this.</button>
+    </div>
+
+    <div id="QuestionOne" class="slide">
+        <h1 id="TestHeading">The ultimate Test</h1>
+        <h2 id="Q1">Question 1: How well do you know me?</h2>
+        <p id="ActualQ1">What's my favorite television series?</p> 
+        <video 
+        class="slideMedia"
+        src="images/TvShow.mp4"
+        autoplay
+        muted
+        loop
+        playsinline></video>
+        <button id="Riverdale">Riverdale</button>
+        <button id="Spongebob">SpongeBob SquarePants</button>
+        <button id="GravityFalls">Gravity Falls</button>
+    </div>
+
+    <div id="QuestionTwo" class="slide">
+        <h1>The ultimate Test</h1>
+        <h2>Question 2: How well do you know my car?</h2>
+        <p>What is the drivetrain layout of my current car?</p>
+        <img
+            class="slideMedia"
+            src="images/Car.jpeg"
+            alt="Car">
+        <button id="FR">FR</button>
+        <button id="FF">FF</button>
+        <button id="RR">RR</button>
+    </div>
+
+    <div id="AnswerFeedback">
+        <p id="FeedbackText"></p>
+        <button id="TryAgain">Try again</button>
+        <button id="Continue">Continue to Question 2</button>
+    </div>
+
+    <div id="QuestionThree" class="slide">
+        <h1>The ultimate Test</h1>
+        <h2>Question 3: How well do you know us?</h2>
+        <p>When is our anniversary?</p>
+        <img
+        class="slideMedia"
+        src="images/Anniversary.gif"
+        alt="Anniversary">
+        <button id="January">January 5th</button>
+        <button id="May">May 1st</button>
+        <button id="September">September 20th</button>
+    </div>
+
+    <div id="BirthdayText" class="slide">
+        <h1>HAPPY BIRTHDAY!!!🎉🎉🎉</h1>
+        <p>Since you answered all the questions correctly, I'll assume that you're my boyfriend, which means today is your birthday!</p>
+        <p>And you know what? I've got a present for you!</p>
+        <video 
+        class="slideMedia"
+        src="images/Dance.mp4"
+        autoplay
+        muted
+        loop
+        playsinline></video>
+        <button id="BirthdayTextContinue">Oh nice, where is it?</button>
+    </div>
+
+    <div id="GameIntro" class="slide">
+        <h1>Well...it's not that simple</h1>
+        <p>I've hidden your present behind a locked door.</p>
+        <p>The only way to get the key is to win a little game.</p>
+        <p>Do you think you can do it?</p>
+        <video 
+        class="slideMedia"
+        src="images/Duh.mp4"
+        autoplay
+        muted
+        loop
+        playsinline></video>
+        <button id="LetsGo">Duhhh, let's go!</button>
+    </div>
+
+    <div id="RacingGame">
+        <div id="GameStats">
+            🪙 Coins: <span id="CoinCount">0</span> /23
+        </div>
+
+        <div id="GameBoard">
+            <div class="Lane" id="LaneOne"></div>
+            <div class="Lane" id="LaneTwo"></div>
+            <div class="Lane" id="LaneThree"></div>
+
+            <div id="PlayerCar">🛻</div>
+            <div id="FinishLine">
+                <span>🏁</span>
+                <span>🏁</span>
+                <span>🏁</span>
+            </div>
+        </div>
+    </div>
+    <div id="KeySection" class="slide">
+        <h1>YOU DID IT!</h1>
+        <p>You collected all 23 coins with the F-150 XL and made it to the finish line! I'm so proud of you, my love!</p>
+        <p>That means you earned the key to your present!</p>
+        <div id="Key">🔑</div>
+        <button id="KeyContinue">Continue</button>
+    </div>
+
+    <div id="DoorSection" class="slide">
+        <h1>The door is locked</h1>
+        <p id="TwoItems">You've got the key. But we found two more items infront of the door.</p>
+        <p id="Hmm">Hmm, which one of these items do you think will actually open the door?</p>
+        <div id="DoorFrame">
+            <div id="BlackRoom"></div>
+            <div id="Door">🚪</div>
+        </div>
+        
+        <div id="DoorOptions">
+            <button id="KeyOption">🔑</button>
+            <button id="HammerOption">🔨</button>
+            <button id="WatchOption">⏱️</button>
+        </div>
+    </div>
+
+    <!-- HAMMER PUNISHMENT POPUP-->
+     <div id="HammerPopup">
+        <div id="HammerPopupContent">
+            <h2>Oh nooo!</h2>
+            <p>You tried to break in? That's not how it works! <br><br>
+            Since you tried to do violent activities, you've lost your key priviledge.
+        <br><br>
+    If you want your key back, you gotta have to impress the princess (me👸🏽) by collecting the things she likes and bringing them to her without getting caught by the guards!</p>
+                <button id="StartMaze">Oh man, it seems like I don't have any other choice. Let's go!</button>
+        </div>
+     </div>
+
+     <!--PRINCESS MAZE-->
+     <div id="PrincessGame">
+        <h1>Impress the Princess👸🏽</h1>
+        <p id="MazeInstructions">
+            Collect all 5 items and make your way to the princess without getting caught!
+        </p>
+        <p id="ItemCounter">Items collected: 0/5</p>
+        <div id="MazeWrapper">
+            <div id="MazeBoard"></div>
+            <div id="Princess">👸🏽</div>
+        </div>
+     </div>
+
+     <!--MAZE WIN POPUP-->
+     <div id="MazeWinPopup">
+        <div id="MazeWinContent">
+            <h2>Good Job!</h2>
+            <p>You impressed the princess and got your key back!
+                <br><br>
+                I guess you're allowed back into the castle after all to open the present behind the locked door.
+            </p>
+            <button id="ReturnToDoor">Continue</button>
+        </div>
+     </div>
+
+     <!--MAZE CAUGHT POPUP-->
+     <div id="CaughtPopup">
+        <div id="CaughtContent">
+            <h2>Oh no!</h2>
+            <p>You got caught by a guard!</p>
+            <br><br>You gotta try again!
+            <button id="RestartMaze">Try again</button>
+        </div>
+     </div>
+
+    <div id="PresentSection" class="slide">
+        <div id="DarkRoom">
+            <p>Switch on the light</p>
+            <button id="LightSwitch">💡</button>
+        </div>
+        <div id="BirthdayRoom" class="slide">
+             <div id="BirthdayBackground">
+                <span>🎈</span>
+                <span>🎈</span>
+                <span>🎈</span>
+                <span>🎈</span>
+                <span>🎈</span>
+                <span>🎈</span>
+                <span>🎈</span>
+                <span>🎈</span>
+            </div>
+            <h1>HAPPY BIRTHDAY!</h1>
+            <div id="Present">🎁</div>
+            <button id="OpenPresent">Open your present</button>
+            <div id="ThreePresents">
+                <h2>Oh, actually, I got you three presents!</h2>
+                <p>Do you wanna open them one by one?</p>
+                <div id="PresentBoxes">
+                    <button class="PresentBox"id="FirstPresent">🎁
+                    <span>Present 1</span></button>
+                    <button class="PresentBox locked" id="SecondPresent">🎁<span>Present 2</span></button>
+                    <button class="PresentBox locked" id="ThirdPresent">🎁<span>Present 3</span></button>
+                </div>
+                <button id="PresentsContinue">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="PresentPopup">
+        <div id="PopupContent">
+            <h2 id="PopupTitle"></h2>
+            <img id="PopupImage" scr=""alt=Your present">
+            <p id="PopupText"></p>
+            <button id="PopupBack">Go back</button>
+        </div>
+    </div>
+    <div id="BlackOverlay"></div>
+
+    <div id="FinalMessage" class="slide">
+        <div id="HeartBackground">
+                <span>💜</span>
+                <span>🥰</span>
+                <span>🎀</span>
+                <span>💜</span>
+                <span>🥰</span>
+                <span>🎀</span>
+        </div>
+        <h1>Happy Birthday to you, my love</h1>
+        <h2>I hope you liked your presents</h2>
+        <img
+        class="slideMedia"
+        src="images/Birthday.jpeg"
+        alt="Birthday">
+        <p>If you want, you can play this game again from the start to check out all the buttons I've created.</p>
+        <button id="RestartWebsite">Start the adventure again</button>
+    </div>
+
+<audio id="Music" src="music/CuteMusic.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
